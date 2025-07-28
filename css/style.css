@@ -79,7 +79,6 @@ section.hero {
   background-size: 60%;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-bottom: 30px;
 }
 
 .hero__content {
@@ -138,4 +137,30 @@ section.hero {
   background-position: left center;
   background-size: 20px;
   padding-left: 30px;
+}
+
+.coworking-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 160px;
+  padding-left: 96px;
+  padding-right: 96px;
+}
+
+.coworking-info img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.coworking-info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.coworking-info p {
+  font-weight: 300;
+  color: var(--brown);
+  margin: 0 0 40px 0;
 }
