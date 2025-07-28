@@ -70,3 +70,72 @@ aside.login a.button {
 aside.login a.button:hover {
   background-color: var(--black);
 }
+
+section.hero {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url('../img/hero-background.jpg');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+}
+
+.hero__content {
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.hero__header {
+  background: rgba(255, 255, 255, 0.70);
+  backdrop-filter: blur(8px);
+  padding: 35px;
+}
+
+.hero__header h1 {
+  font-family: var(--secondary-font);
+  font-size: 48px;
+  line-height: 55px;
+  max-width: 500px;
+  margin:0;
+  position: relative;
+}
+
+.hero__header h1::before {
+  content: '';
+  height: 8px;
+  width: 72px;
+  position: absolute;
+  background-color: var(--brown);
+  right: 0;
+  top: 25px;
+}
+
+.hero__header p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--brown);
+}
+
+.hero__list ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 70%;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.hero__list ul li {
+  font-weight: 300;
+  background-image: url('../img/icon-list-item.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+  padding-left: 30px;
+}
